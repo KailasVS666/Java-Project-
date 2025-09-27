@@ -1,11 +1,13 @@
 package com.iplus.studentManagement.controller;
 
 import com.iplus.studentManagement.service.StudentService;
-import org.springframework.stereotype.Controller;
+import io.swagger.v3.oas.annotations.tags.Tag; // <-- NEW: Required for Swagger to document this class
+import org.springframework.stereotype.Controller; // <-- CORRECT: Renders HTML views
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
+@Tag(name = "App Navigation", description = "Handles unauthenticated and authenticated public navigation routes.")
 public class AppController {
 
     private final StudentService studentService;

@@ -1,12 +1,14 @@
 package com.iplus.studentManagement.controller;
 
 import com.iplus.studentManagement.service.UserService;
-import org.springframework.stereotype.Controller;
+import io.swagger.v3.oas.annotations.tags.Tag; // <-- ADD THIS IMPORT
+import org.springframework.stereotype.Controller; // <-- MUST BE @Controller for RedirectAttributes
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
+@Tag(name = "Registration & Authentication", description = "Handles new user sign-up and password hashing.") // <-- ADD THIS ANNOTATION
 public class RegistrationController {
 
     private final UserService userService;
