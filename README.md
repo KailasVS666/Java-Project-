@@ -1,4 +1,4 @@
-This is the definitive `README.md` file for your complete Student Management Portal project.
+
 
 # 📚 Student Management Portal (SMP)
 
