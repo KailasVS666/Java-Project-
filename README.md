@@ -47,7 +47,8 @@ The `spring.jpa.hibernate.ddl-auto=update` setting will automatically create the
 1.  **Clone the Repository:**
 
     ```bash
-    git clone [YOUR_REPOSITORY_URL]
+    git clone https://github.com/KailasVS666/Java-Project-.git
+
     cd smp-skeleton-main
     ```
 
